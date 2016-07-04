@@ -1,0 +1,41 @@
+---
+  parser: babel-eslint
+  parserOptions:
+    ecmaVersion: 7
+    sourceType: module
+    ecmaFeatures:
+      globalReturn: true
+      experimentalObjectRestSpread: true
+  env:
+    atomtest: true
+    es6: true
+    node: true
+  extends:
+    - eslint:recommended
+    - plugin:import/errors
+    - plugin:import/warnings
+    - eslint-config-airbnb
+  globals:
+    atom: false
+  plugins:
+    - babel
+    - flow-vars
+    - flowtype
+    - import
+    - prefer-object-spread
+  rules:
+    babel/array-bracket-spacing: 1
+    babel/arrow-parens: 1
+    babel/flow-object-type: 1
+    babel/generator-star-spacing: 1
+    babel/new-cap: 1
+    babel/no-await-in-loop: 1
+    babel/object-shorthand: 1
+    eqeqeq: [error, smart]
+    flow-vars/define-flow-type: 1
+    flow-vars/use-flow-type: 1
+    import/no-unresolved: [error, { ignore: ["atom"]}]
+    prefer-object-spread/prefer-object-spread: error
+    react/prefer-stateless-function: 0
+    react/prop-types: 0
+    quotes: [error, double, {avoidEscape: true, allowTemplateLiterals: true}]
