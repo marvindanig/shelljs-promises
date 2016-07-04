@@ -1,5 +1,5 @@
 // @flow
-/* eslint-disable consistent-return, max-len, spaced-comment */
+/* eslint-disable spaced-comment */
 
 const sh = require("shelljs");
 /*::
