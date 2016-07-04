@@ -8,7 +8,7 @@ import type {
 } from "shelljs";
 */
 
-function ShellString(stdout/*: string | string[]*/)/*: Promise<ShellJS$String>*/ {
+function shellString(stdout/*: string | string[]*/ = "")/*: Promise<ShellJS$String>*/ {
   return Promise.resolve(new sh.ShellString(stdout));
 }
 
@@ -21,6 +21,6 @@ function exec(cmd/*: string*/, options/*: OptExec*/ = {})/*: Promise<ShellJS$Str
 }
 
 module.exports = {
-  ShellString,
+  shellString,
   exec,
 };
