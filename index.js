@@ -3,7 +3,7 @@
 
 const sh = require("shelljs");
 /*::
-import type { // eslint-disable-line no-duplicate-imports
+import type {
   OptExec,
 } from "shelljs";
 */
