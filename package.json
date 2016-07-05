@@ -37,7 +37,7 @@
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-prefer-object-spread": "^1.1.0",
     "eslint-plugin-react": "^5.2.2",
-    "eslint": "^2.10.1",
+    "eslint": "^3.0.1",
     "flow-shelljs": "freebroccolo/flow-shelljs"
   }
 }
