@@ -2,42 +2,41 @@
   "name": "shelljs-promises",
   "version": "0.0.0",
   "description": "Promise based interfaces for ShellJS",
+  "author": {
+    "name": "Darin Morrison",
+    "email": "freebroccolo@users.noreply.github.com",
+    "url": "https://github.com/freebroccolo"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/freebroccolo/shelljs-promises",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/freebroccolo/shelljs-promises.git"
   },
-  "author": "Darin Morrison",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/freebroccolo/shelljs-promises/issues"
+  },
+  "scripts": {
+    "postpublish": "greenkeeper-postpublish",
+    "precommit": "npm test",
+    "prepublish": "npm test",
+    "prepush": "npm test",
+    "test": "eslint . & flow & wait"
   },
   "main": "./index.js",
   "dependencies": {
     "shelljs": "^0.7.0"
   },
+  "engines": {
+    "node": ">=5.0.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.10.0",
-    "babel-core": "^6.8.0",
     "babel-eslint": "^6.0.4",
-    "babel-plugin-dedent": "^2.0.0",
-    "babel-plugin-external-helpers": "^6.8.0",
-    "babel-plugin-syntax-flow": "^6.8.0",
-    "babel-plugin-transform-es2015-destructuring": "^6.9.0",
-    "babel-plugin-transform-es2015-function-name": "^6.9.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
-    "babel-plugin-transform-es2015-parameters": "^6.9.0",
-    "babel-plugin-transform-flow-strip-types": "^6.8.0",
-    "babel-plugin-transform-runtime": "^6.8.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-babel": "^3.2.0",
-    "eslint-plugin-flow-vars": "^0.4.0",
-    "eslint-plugin-flowtype": "^2.2.7",
-    "eslint-plugin-import": "^1.8.1",
-    "eslint-plugin-jsx-a11y": "^1.2.0",
-    "eslint-plugin-prefer-object-spread": "^1.1.0",
-    "eslint-plugin-react": "^5.2.2",
-    "eslint": "^2.10.1",
-    "flow-shelljs": "freebroccolo/flow-shelljs"
+    "eslint": "^2.13.1",
+    "eslint-config-flow-atom": "^0.0.0",
+    "flow-bin": "^0.28.0",
+    "greenkeeper-postpublish": "^1.0.0",
+    "husky": "^0.11.4"
   }
 }

@@ -1,8 +1,9 @@
 [libs]
-node_modules/flow-shelljs/sig
+node_modules/@freebroccolo/flow-shelljs/sig/v0.7.0
 
 [options]
 esproposal.class_instance_fields=enable
 esproposal.class_static_fields=enable
 esproposal.decorators=ignore
 module.use_strict=true
+suppress_comment=.*\\$FlowIgnore.*
