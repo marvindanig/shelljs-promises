@@ -1,4 +1,4 @@
-# shelljs-promises
+# @freebroccolo/shelljs-promises
 
 Promise based interfaces for ShellJS
 

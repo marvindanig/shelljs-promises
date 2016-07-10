@@ -1,6 +1,6 @@
 {
-  "name": "shelljs-promises",
   "version": "0.0.0",
+  "name": "@freebroccolo/shelljs-promises",
   "description": "Promise based interfaces for ShellJS",
   "author": {
     "name": "Darin Morrison",
